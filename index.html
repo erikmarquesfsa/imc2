@@ -1,31 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/pg.css">
     <title>IMC</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div id="calc-container">
-            <h2>Calculadora IMC</h2>
-            <form id="imc-form">
-                <div class="form-inputs">
-                    <div class="form-control">
-                        <label for="height">Altura:</label>
-                        <input type="text" name="height" id="height" placeholder="Exemplo 1,74" required>
-                    </div>
-                    <div class="form-control">
-                        <label for="weight">Peso:</label>
-                        <input type="text" name="weight" id="weight" placeholder="Exemplo 70,5">
-                    </div>
-                </div>
-                <div class="action-control">
-                    <button id="calc-btn">Calcular</button>
-                    <button id="clear-btn">Limpar</button>
-                </div>
-            </form>
+      <div id="calc-container">
+        <h2>Calculadora IMC</h2>
+        <form id="imc-form">
+          <div class="form-inputs">
+            <div class="form-control">
+              <label for="height">Altura:</label>
+              <input
+                type="text"
+                name="height"
+                id="height"
+                placeholder="Exemplo 1,74"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="weight">Peso:</label>
+              <input
+                type="text"
+                name="weight"
+                id="weight"
+                placeholder="Exemplo 70,5"
+              />
+            </div>
+          </div>
+          <div class="action-control">
+            <button id="calc-btn">Calcular</button>
+            <button id="clear-btn">Limpar</button>
+          </div>
+        </form>
+      </div>
+      <div id="result-container" class="hide">
+        <p id="imc-number">Seu IMC:<span></span></p>
+        <p id="imc-info">Situação atual:<span></span></p>
+        <h3>Confira as classificações</h3>
+        <div id="imc-table">
+          <div class="table-header">
+            <h4>IMC</h4>
+            <h4>Classificação</h4>
+            <h4>Obesidade</h4>
+          </div>
         </div>
+        <button id="back-btn">Voltar</button>
+      </div>
     </div>
-</body>
+  </body>
 </html>
