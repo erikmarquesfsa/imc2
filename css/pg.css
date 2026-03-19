@@ -125,6 +125,13 @@ button:hover{
     text-align: center;
 }
 
+.table-header h4,
+.table-data p{
+    flex:1
+}
+
+.table-header h4
+
 
 
 
