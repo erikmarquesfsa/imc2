@@ -15,7 +15,7 @@ body{
 }
 
 .hide{
-    display: none !important;
+    display:;
 }
 
 .container{
@@ -42,6 +42,62 @@ body{
     flex: 1;
     flex-direction: column;
     margin-bottom: 1rem;
+}
+
+.form-control label{
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+    color: #ccc;
+}
+
+.form-control input{
+    padding: 1rem 0.5rem;
+}
+
+.action-control{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+button{
+    text-transform: uppercase;
+    padding: 1rem 1.5rem;
+    background-color: #f44236;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0.9;
+    flex: 1 ;
+}
+
+button:hover{
+    opacity: 1;
+}
+
+#clear-btn{
+    background-color: #444;
+}
+
+/*Tabela*/
+#result-container{
+    text-align: center;
+}
+
+#imc-number{
+    font-size: 2.4rem;
+    margin-bottom: 0.6rem;
+}
+
+#imc-info{
+    font-size: 1.4rem;
+    color: #ccc;
+}
+
+#resul-container h3{
+    margin-top: 1rem;
+    color: #dfdfdf;
 }
 
 
