@@ -15,7 +15,7 @@ body{
 }
 
 .hide{
-    display:;
+    display:none !important;
 }
 
 .container{
