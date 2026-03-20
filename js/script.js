@@ -75,3 +75,24 @@ function createTable(data){
 
     });
 }
+
+function validDigits(text){
+    return text.replace(/[^0-9,]/g,"");
+}
+
+function calcImc(height,weight){
+    const imc = (weight / (height*height)).toFixed(1);
+    return imc;
+}
+
+function cleanInputs(){
+    heightInput = "";
+    weightInput = "";
+    imcNumber = "";
+    imcInfo = "";
+}
+
+
+
+
+
