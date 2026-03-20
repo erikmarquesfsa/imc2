@@ -86,10 +86,10 @@ function calcImc(height,weight){
 }
 
 function cleanInputs(){
-    heightInput = "";
-    weightInput = "";
-    imcNumber = "";
-    imcInfo = "";
+    heightInput.value = "";
+    weightInput.value = "";
+    imcNumber.className = "";
+    imcInfo.className = "";
 }
 
 function showOrHideResults(){
@@ -108,6 +108,7 @@ createTable(data);
 });
 
 calcBtn.addEventListener("click",(e)=>{
+    e.preventDefault();
     const weight = +weightInput.value.replace(",",".");
     const height = +heightInput.value.replace(",",".");
 
@@ -157,7 +158,7 @@ calcBtn.addEventListener("click",(e)=>{
 
 clearBtn.addEventListener("click", (e)=>{
     e.preventDefault();
-    cleanInputs;
+    cleanInputs();
 });
 
 backBtn.addEventListener("click",(e)=>{
